@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>demoware editor v.0.1</title>
+        <link rel="stylesheet" href="demoware.css">
+    </head>
+    <body>
+        <div id="app" class="flexv">
+            <nav id="menu" class="flexh">
+                <h1>demoware<sup>&alpha;</sup></h1>
+                <div>
+                    <b>project</b>
+                    <a href="javascript:;">new</a>
+                    <a href="javascript:;">load</a>
+                </div>
+            </nav>
+            <div id="main" class="flexh flex1">
+                <ul id="pages">
+                    <h2>pages</h2>
+                    <li class="add"><a href="javascript:;">+</a></li>
+                </ul>
+                <div id="doc" class="flex1">
+                </div>
+                <div id="sidebar" class="flexv">
+                    <h2>properties</h2>
+                    <div id="properties">
+                    </div>
+                    <h2>assets</h2>
+                    <div id="assets" class="flex1">
+                        <input type="file" multiple id="uploadAsset" accept="image/*" style="display:none">
+                        <ul class="flexv">
+                            <li class="add"><a href="javascript:;">+</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="d3.v3.js"></script>
+        <script src="demoware.js"></script>
+    </body>
+</html>
